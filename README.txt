@@ -1,6 +1,5 @@
 Instructions on how to use tensorflow environment on docker, using the tensorflow image from docker hub.
 
-Premise: This needs to be done to install matplotlib and all the other libraries needed.
 
 CREATING THE CONTAINER:
 
@@ -10,6 +9,7 @@ Step 1:
 
 	Runs Dockerfile and creates a new image derived from the official tensorflow image 
 	with all extra libraries you wish to install via pip by adding them in the requirements.txt file.
+	(for example matplotlib, pandas and numpy).
 	This command will also create a new user in the container which will be used as the default 
 	user to access the container. Privilidges can be escalated with sudo and password: password
 	as it is also included in the container.
